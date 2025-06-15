@@ -1,0 +1,152 @@
+---
+title: Protected Content
+description: "This page requires authentication to access"
+---
+
+<div id="auth-container">
+  <div id="login-form" style={{
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '60vh',
+    textAlign: 'center'
+  }}>
+    <h2 style={{ marginBottom: '2rem', color: '#16A34A' }}>🔒 Authentication Required</h2>
+    <p style={{ marginBottom: '2rem', color: '#666' }}>Please enter the password to access this content</p>
+    
+    <div style={{ marginBottom: '1rem' }}>
+      <input
+        type="password"
+        id="password-input"
+        placeholder="Enter password"
+        style={{
+          padding: '12px 16px',
+          fontSize: '16px',
+          border: '2px solid #e2e8f0',
+          borderRadius: '8px',
+          width: '300px',
+          maxWidth: '90vw'
+        }}
+        onKeyPress="if(event.key === 'Enter') checkPassword()"
+      />
+    </div>
+    
+    <button
+      onclick="checkPassword()"
+      style={{
+        backgroundColor: '#16A34A',
+        color: 'white',
+        padding: '12px 24px',
+        fontSize: '16px',
+        border: 'none',
+        borderRadius: '8px',
+        cursor: 'pointer',
+        marginBottom: '1rem'
+      }}
+      onMouseOver="this.style.backgroundColor='#15803D'"
+      onMouseOut="this.style.backgroundColor='#16A34A'"
+    >
+      Access Content
+    </button>
+    
+    <div id="error-message" style={{ color: '#ef4444', display: 'none' }}>
+      Incorrect password. Please try again.
+    </div>
+  </div>
+
+  <div id="protected-content" style={{ display: 'none' }}>
+    
+# Welcome to Protected Content! 🎉
+
+Congratulations! You have successfully authenticated and can now access this protected content.
+
+## About This Authentication
+
+This page is protected with the password: **scamai2025**
+
+## Protected Features
+
+<CardGroup cols={2}>
+  <Card
+    title="Secure Documentation"
+    icon="shield-check"
+  >
+    Your sensitive documentation is now protected behind authentication
+  </Card>
+  <Card
+    title="Easy Access Control"
+    icon="key"
+  >
+    Simple password-based protection for your important content
+  </Card>
+</CardGroup>
+
+## What You Can Do Here
+
+This is your protected space where you can add:
+
+- Sensitive company information
+- Internal processes and procedures  
+- Confidential API documentation
+- Private team resources
+- Any content that requires restricted access
+
+<Note>
+This authentication is client-side and suitable for basic content protection. For production applications with highly sensitive data, consider implementing server-side authentication.
+</Note>
+
+## Content Management
+
+You can now safely document:
+
+1. **Internal APIs** - Document your private endpoints
+2. **Company Policies** - Share internal guidelines  
+3. **Development Processes** - Document your workflows
+4. **Team Resources** - Share private tools and resources
+
+<Warning>
+Remember to keep your password secure and only share it with authorized team members.
+</Warning>
+
+---
+
+*Successfully authenticated with scamai2025* ✅
+
+  </div>
+</div>
+
+<script>
+{`
+function checkPassword() {
+  const passwordInput = document.getElementById('password-input');
+  const loginForm = document.getElementById('login-form');
+  const protectedContent = document.getElementById('protected-content');
+  const errorMessage = document.getElementById('error-message');
+  
+  const enteredPassword = passwordInput.value;
+  const correctPassword = 'scamai2025';
+  
+  if (enteredPassword === correctPassword) {
+    loginForm.style.display = 'none';
+    protectedContent.style.display = 'block';
+    errorMessage.style.display = 'none';
+    
+    // Store authentication state in session storage
+    sessionStorage.setItem('authenticated', 'true');
+  } else {
+    errorMessage.style.display = 'block';
+    passwordInput.value = '';
+    passwordInput.focus();
+  }
+}
+
+// Check if user is already authenticated
+document.addEventListener('DOMContentLoaded', function() {
+  if (sessionStorage.getItem('authenticated') === 'true') {
+    document.getElementById('login-form').style.display = 'none';
+    document.getElementById('protected-content').style.display = 'block';
+  }
+});
+`}
+</script> 
