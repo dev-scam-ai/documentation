@@ -46,10 +46,13 @@
             "group": "Product",
             "pages": [
               "products/product-vision",
-              "products/mvp-roadmap",
+              "products/product-roadmap",
               "products/feature-prioritization",
               "products/market-validation"
-            ]
+            ],
+            "labels": {
+              "products/product-roadmap": "Product Roadmap"
+            }
           }
         ]
       },
