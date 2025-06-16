@@ -46,13 +46,25 @@
             "group": "Product",
             "pages": [
               "products/product-vision",
-              "products/product-roadmap",
-              "products/feature-prioritization",
-              "products/market-validation"
+              "products/product-roadmap"
             ],
             "labels": {
               "products/product-roadmap": "Product Roadmap"
             }
+          }
+        ]
+      },
+      {
+        "tab": "Team",
+        "groups": [
+          {
+            "group": "Team",
+            "pages": [
+              "team-management/culture-values",
+              "team-management/team-structure",
+              "team-management/performance-growth",
+              "team-management/teams"
+            ]
           }
         ]
       },
@@ -91,19 +103,6 @@
               "business/business-model",
               "business/customer-acquisition",
               "business/metrics"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Team",
-        "groups": [
-          {
-            "group": "Team",
-            "pages": [
-              "team-management/team-structure",
-              "team-management/performance-growth",
-              "team-management/teams"
             ]
           }
         ]
