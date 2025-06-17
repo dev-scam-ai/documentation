@@ -34,7 +34,7 @@
               "foundation/startup-mission-vision",
               "foundation/advisor-profiles-expertise",
               "foundation/story-and-journey",
-              "foundation/north-star-metrics"
+              "foundation/vc-approach"
             ]
           }
         ]
@@ -61,9 +61,7 @@
             "group": "Team",
             "pages": [
               "team-management/culture-values",
-              "team-management/team-structure",
-              "team-management/performance-growth",
-              "team-management/teams"
+              "team-management/team-structure"
             ]
           }
         ]
@@ -100,33 +98,12 @@
           {
             "group": "Business",
             "pages": [
-              "business/business-model",
-              "business/customer-acquisition",
-              "business/metrics"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Knowledge",
-        "groups": [
-          {
-            "group": "Knowledge",
-            "pages": [
-              "knowledge/startup-playbooks",
-              "knowledge/lessons-learned",
-              "knowledge/templates"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Advisor",
-        "groups": [
-          {
-            "group": "Advisor",
-            "pages": [
-              "foundation/advisor-profiles-expertise"
+              "business/business-goal",
+              "business/early-customer-profile",
+              "business/ideal-customer-profile",
+              "business/cold-outreach-attack",
+              "business/partnership-ngos",
+              "business/partnership-commercial-research"
             ]
           }
         ]

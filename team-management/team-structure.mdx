@@ -20,82 +20,209 @@ title: "Team Structure"
     Team Structure
   </div>
 
-  {/* Team Focus Framework */}
-  <div style={{
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-    gap: '1.5rem',
+  {/* Team Participation Rules */}
+  <div className="dark:bg-gradient-to-br dark:from-blue-900/20 dark:to-green-900/20 bg-gradient-to-br from-blue-50 to-green-50" style={{
+    borderRadius: '24px',
+    padding: '2.5rem',
+    border: '1px solid rgba(59, 130, 246, 0.15)',
     marginBottom: '4rem'
   }}>
-    
-    <div className="dark:bg-blue-500/10 bg-blue-50" style={{
-      borderRadius: '20px',
-      padding: '2rem',
-      border: '1px solid rgba(59, 130, 246, 0.15)',
+    <div className="dark:text-white text-gray-900" style={{
+      fontSize: '1.8rem',
+      fontWeight: 700,
+      letterSpacing: '-0.02em',
+      marginBottom: '2rem',
       textAlign: 'center'
     }}>
-      <div style={{
-        width: '60px',
-        height: '60px',
-        borderRadius: '50%',
-        background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: '0 auto 1.5rem auto',
-        fontSize: '1.5rem'
-      }}>
-        🎯
-      </div>
-      <div className="dark:text-blue-200 text-blue-800" style={{
-        fontSize: '1.2rem',
-        fontWeight: 600,
-        marginBottom: '1rem'
-      }}>
-        Single Team Focus
-      </div>
-      <div className="dark:text-blue-300 text-blue-600" style={{
-        fontSize: '0.95rem',
-        lineHeight: 1.5
-      }}>
-        Product Managers, Tech Leads, and ML Research teams maintain dedicated focus on their core responsibilities
-      </div>
+      Team Participation Rules
     </div>
 
-    <div className="dark:bg-green-500/10 bg-green-50" style={{
-      borderRadius: '20px',
-      padding: '2rem',
-      border: '1px solid rgba(16, 185, 129, 0.15)',
-      textAlign: 'center'
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+      gap: '2rem'
     }}>
-      <div style={{
-        width: '60px',
-        height: '60px',
-        borderRadius: '50%',
-        background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        margin: '0 auto 1.5rem auto',
-        fontSize: '1.5rem'
+      
+      {/* Rule 1: Single Team Focus */}
+      <div className="dark:bg-white/10 bg-white/70" style={{
+        borderRadius: '20px',
+        padding: '2rem',
+        border: '1px solid rgba(255, 255, 255, 0.2)'
       }}>
-        🔄
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '1.5rem'
+        }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            borderRadius: '12px',
+            background: 'linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginRight: '1rem',
+            fontSize: '1.2rem',
+            color: 'white'
+          }}>
+            🎯
+          </div>
+          <div className="dark:text-blue-200 text-blue-800" style={{
+            fontSize: '1.2rem',
+            fontWeight: 600
+          }}>
+            Rule 1: Single Team Focus
+          </div>
+        </div>
+        
+        <div className="dark:text-blue-300 text-blue-700" style={{
+          fontSize: '0.95rem',
+          lineHeight: 1.6,
+          marginBottom: '1rem'
+        }}>
+          <strong>Dedicated Focus Required:</strong>
+        </div>
+        
+        <div style={{
+          display: 'grid',
+          gap: '0.75rem'
+        }}>
+          <div className="dark:text-blue-300 text-blue-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#3b82f6', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            Product Managers (PMs)
+          </div>
+          <div className="dark:text-blue-300 text-blue-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#3b82f6', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            Tech Leads
+          </div>
+          <div className="dark:text-blue-300 text-blue-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#3b82f6', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            ML Research Teams
+          </div>
+        </div>
+        
+        <div className="dark:text-blue-400 text-blue-600" style={{
+          fontSize: '0.85rem',
+          lineHeight: 1.5,
+          marginTop: '1rem',
+          fontStyle: 'italic'
+        }}>
+          These roles maintain dedicated focus on their core responsibilities
+        </div>
       </div>
-      <div className="dark:text-green-200 text-green-800" style={{
-        fontSize: '1.2rem',
-        fontWeight: 600,
-        marginBottom: '1rem'
+
+      {/* Rule 2: Cross-Team Participation */}
+      <div className="dark:bg-white/10 bg-white/70" style={{
+        borderRadius: '20px',
+        padding: '2rem',
+        border: '1px solid rgba(255, 255, 255, 0.2)'
       }}>
-        Cross-Team Participation
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          marginBottom: '1.5rem'
+        }}>
+          <div style={{
+            width: '48px',
+            height: '48px',
+            borderRadius: '12px',
+            background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginRight: '1rem',
+            fontSize: '1.2rem',
+            color: 'white'
+          }}>
+            🔄
+          </div>
+          <div className="dark:text-green-200 text-green-800" style={{
+            fontSize: '1.2rem',
+            fontWeight: 600
+          }}>
+            Rule 2: Cross-Team Participation
+          </div>
+        </div>
+        
+        <div className="dark:text-green-300 text-green-700" style={{
+          fontSize: '0.95rem',
+          lineHeight: 1.6,
+          marginBottom: '1rem'
+        }}>
+          <strong>Maximum 2 Teams Per Person:</strong>
+        </div>
+        
+        <div style={{
+          display: 'grid',
+          gap: '0.75rem'
+        }}>
+          <div className="dark:text-green-300 text-green-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#10b981', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            Business + Technical functions
+          </div>
+          <div className="dark:text-green-300 text-green-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#10b981', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            Strategic + Operational roles
+          </div>
+          <div className="dark:text-green-300 text-green-600" style={{
+            fontSize: '0.9rem',
+            display: 'flex',
+            alignItems: 'center'
+          }}>
+            <span style={{ color: '#10b981', marginRight: '0.75rem', fontSize: '0.7rem' }}>●</span>
+            Core + Support responsibilities
+          </div>
+        </div>
+        
+        <div className="dark:text-green-400 text-green-600" style={{
+          fontSize: '0.85rem',
+          lineHeight: 1.5,
+          marginTop: '1rem',
+          fontStyle: 'italic'
+        }}>
+          Enables cross-functional collaboration while maintaining focus
+        </div>
       </div>
-      <div className="dark:text-green-300 text-green-600" style={{
-        fontSize: '0.95rem',
-        lineHeight: 1.5
-      }}>
-        Maximum 2 teams per person, typically spanning business and technical functions
-      </div>
+
     </div>
 
+    {/* Summary */}
+    <div className="dark:bg-white/5 bg-white/50" style={{
+      borderRadius: '16px',
+      padding: '1.5rem',
+      marginTop: '2rem',
+      textAlign: 'center',
+      border: '1px solid rgba(255, 255, 255, 0.1)'
+    }}>
+      <div className="dark:text-gray-300 text-gray-700" style={{
+        fontSize: '0.95rem',
+        lineHeight: 1.6,
+        fontWeight: 500
+      }}>
+        <strong>Organizational Principle:</strong> Balance focused expertise with collaborative flexibility to maximize both individual impact and team synergy
+      </div>
+    </div>
   </div>
 
   {/* Core Teams */}
@@ -190,22 +317,12 @@ title: "Team Structure"
         }}>
           Lovely Teammates
         </div>
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '0.75rem'
+        <div className="dark:text-purple-300 text-purple-600" style={{
+          fontSize: '0.95rem',
+          lineHeight: 1.5,
+          fontStyle: 'italic'
         }}>
-          {['Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu', 'Logan', 'TianFang'].map((name, index) => (
-            <div key={index} className="dark:bg-purple-500/10 bg-purple-50 dark:text-purple-300 text-purple-600" style={{
-              padding: '0.5rem 1rem',
-              borderRadius: '12px',
-              fontSize: '0.9rem',
-              fontWeight: 500,
-              border: '1px solid rgba(139, 92, 246, 0.15)'
-            }}>
-              {name}
-            </div>
-          ))}
+          All team members contribute to strategic initiatives and cross-functional collaboration
         </div>
       </div>
     </div>
@@ -350,22 +467,12 @@ title: "Team Structure"
           }}>
             Lovely Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-blue-300 text-blue-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Dennis', 'Ben'].map((name, index) => (
-              <div key={index} className="dark:bg-blue-500/10 bg-blue-50 dark:text-blue-300 text-blue-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(59, 130, 246, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            Supporting team members contribute to product development and testing initiatives
           </div>
         </div>
       </div>
@@ -512,22 +619,12 @@ title: "Team Structure"
           }}>
             Lovely Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-green-300 text-green-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Cara', 'Dennis', 'Ben', 'Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu'].map((name, index) => (
-              <div key={index} className="dark:bg-green-500/10 bg-green-50 dark:text-green-300 text-green-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(16, 185, 129, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            Supporting team members support defense system development and deployment
           </div>
         </div>
       </div>
@@ -569,7 +666,7 @@ title: "Team Structure"
             <div className="dark:text-gray-400 text-gray-600" style={{
               fontSize: '1rem'
             }}>
-              Research and development initiatives
+              To C App Experimental MVP - Mobile application development
             </div>
           </div>
         </div>
@@ -608,7 +705,7 @@ title: "Team Structure"
               letterSpacing: '0.05em',
               marginBottom: '0.5rem'
             }}>
-              Developer
+              Mobile App Developer
             </div>
             <div className="dark:bg-yellow-500/15 bg-yellow-100 dark:text-yellow-200 text-yellow-700" style={{
               padding: '0.5rem 1rem',
@@ -633,22 +730,12 @@ title: "Team Structure"
           }}>
             Lovely Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-yellow-300 text-yellow-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Cara', 'Dennis', 'Ben', 'Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu'].map((name, index) => (
-              <div key={index} className="dark:bg-yellow-500/10 bg-yellow-50 dark:text-yellow-300 text-yellow-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(245, 158, 11, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            Innovation-focused team members contribute to consumer app development and MVP testing
           </div>
         </div>
       </div>
@@ -840,22 +927,12 @@ title: "Team Structure"
           }}>
             Lovely ML Research Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-gray-300 text-gray-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Cara', 'Dennis', 'Ben', 'Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu', 'Logan', 'TianFang'].map((name, index) => (
-              <div key={index} className="dark:bg-gray-500/10 bg-gray-50 dark:text-gray-300 text-gray-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(107, 114, 128, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            Dedicated researchers and engineers advancing ML security across attack and defense domains
           </div>
         </div>
       </div>
@@ -963,22 +1040,12 @@ title: "Team Structure"
           }}>
             Lovely GenAI Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-purple-300 text-purple-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Cara', 'Dennis', 'Ben', 'Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu', 'Logan', 'TianFang'].map((name, index) => (
-              <div key={index} className="dark:bg-purple-500/10 bg-purple-50 dark:text-purple-300 text-purple-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(139, 92, 246, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            China-based team members specializing in cutting-edge generative AI research and applications
           </div>
         </div>
       </div>
@@ -1056,22 +1123,12 @@ title: "Team Structure"
           }}>
             Lovely Audio Research Teammates
           </div>
-          <div style={{
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '0.75rem'
+          <div className="dark:text-cyan-300 text-cyan-600" style={{
+            fontSize: '0.95rem',
+            lineHeight: 1.5,
+            fontStyle: 'italic'
           }}>
-            {['Kyle', 'Jiheng', 'Cara', 'Dennis', 'Ben', 'Albert', 'Leechi', 'Ankit', 'Zoe (Jiayao)', 'Yuxin', 'Gong Chen', 'Polaris Wu', 'Logan', 'TianFang'].map((name, index) => (
-              <div key={index} className="dark:bg-cyan-500/10 bg-cyan-50 dark:text-cyan-300 text-cyan-600" style={{
-                padding: '0.5rem 1rem',
-                borderRadius: '12px',
-                fontSize: '0.9rem',
-                fontWeight: 500,
-                border: '1px solid rgba(6, 182, 212, 0.15)'
-              }}>
-                {name}
-              </div>
-            ))}
+            Specialized researchers focused on voice security, audio manipulation detection, and acoustic analysis
           </div>
         </div>
       </div>
